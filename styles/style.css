@@ -120,7 +120,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3125rem;
+  font-size: 1.4325rem;
 }
 
 header,
@@ -267,6 +267,168 @@ ion-icon:hover {
   text-align: center;
   margin: 2rem 0;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  /* General settings */
+
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* */
+
+  .grid_1:nth-child(1) {
+    grid-area: one;
+  }
+  .grid_1:nth-child(2) {
+    grid-area: two;
+  }
+  .grid_1:nth-child(3) {
+    grid-area: three;
+    place-self: end;
+  }
+  .grid_1:nth-child(4) {
+    grid-area: four;
+    place-self: start;
+  }
+
+  .top {
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three four";
+  }
+
+  .headings_text {
+    max-width: 40rem;
+  }
+
+  .download {
+    max-width: 16rem;
+  }
+
+  .grid_2:nth-child(1) {
+    grid-area: one;
+  }
+  .grid_2:nth-child(2) {
+    grid-area: two;
+  }
+  .grid_2:nth-child(3) {
+    grid-area: three;
+    place-self: end center;
+  }
+  .grid_2:nth-child(4) {
+    grid-area: four;
+    place-self: end center;
+  }
+  .grid_2:nth-child(5) {
+    grid-area: five;
+    place-self: end center;
+  }
+
+  .keep {
+    grid-template-areas:
+      "one one"
+      "two three"
+      "two four"
+      "two five";
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .keep > img {
+    transform: translateX(-6em);
+  }
+
+  .left_alignment > * {
+    text-align: left;
+    max-width: 23rem;
+  }
+
+  .access {
+    place-items: center;
+  }
+
+  .grid_4:nth-child(1) {
+    grid-area: one;
+  }
+  .grid_4:nth-child(2) {
+    grid-area: two;
+    place-self: center end;
+  }
+  .grid_4:nth-child(3) {
+    grid-area: three;
+  }
+  .grid_4:nth-child(4) {
+    grid-area: four;
+    place-self: center start;
+  }
+
+  .supercharge {
+    grid-template-areas:
+      "one one one"
+      "two three four";
+    place-items: center;
+    max-width: 70rem;
+    margin: 5rem auto;
+  }
+
+  .logos {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 60rem;
+    margin: 8rem auto;
+  }
+
+  .grid_6:nth-child(1) {
+    grid-area: one;
+  }
+  .grid_6:nth-child(2) {
+    grid-area: two;
+    place-self: end;
+  }
+  .grid_6:nth-child(3) {
+    grid-area: three;
+    place-self: start;
+  }
+
+  .available {
+    grid-template-areas:
+      "one one"
+      "two three";
+  }
+
+  footer {
+    grid-template-columns: 0.9fr 3fr 1.5fr;
+  }
+
+  footer > img {
+    place-self: start center;
+  }
+
+  ul {
+    columns: 3;
+    place-self: start start;
+    text-align: left;
+  }
+
+  li {
+    line-height: 1.5;
+    margin-right: 3rem;
+  }
 }
