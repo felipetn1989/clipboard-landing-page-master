@@ -353,7 +353,7 @@ ion-icon:hover {
   }
 
   .keep > img {
-    transform: translateX(-6em);
+    transform: translateX(-33%);
   }
 
   .left_alignment > * {
